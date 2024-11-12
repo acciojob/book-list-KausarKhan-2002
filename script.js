@@ -12,27 +12,36 @@ const createBookList = () => {
   let tdAuthor = document.createElement("td");
   let tdIsbn = document.createElement("td");
   let removeRow = document.createElement("td");
+  let removeButton = document.createElement("button");
+    removeButton.innerHTML = "&#10005;"
+//   removeButton.innerHTML = "delete";
+  removeButton.classList.add("delete");
+  console.log(removeButton);
+  
 
   tdTitle.innerHTML = title.value;
   tdAuthor.innerHTML = author.value;
   tdIsbn.innerHTML = isbn.value;
-  removeRow.innerHTML = "&#10005;";
-  removeRow.classList.add("removeMe");
+//   removeRow.innerHTML = removeButton;
 
   tr.appendChild(tdTitle);
   tr.appendChild(tdAuthor);
   tr.appendChild(tdIsbn);
   tr.appendChild(removeRow);
+  tr.appendChild(removeButton)
 
   bookList.appendChild(tr);
 
- // To remove a table row 
-  let removeMe = document.querySelectorAll(".removeMe");
-  removeMe.forEach((remove) => {
-    remove.addEventListener("click", () => {
-      remove.parentElement.remove();
+  // To remove a table row
+  let deleteMe = document.querySelectorAll(".delete");
+  deleteMe.forEach((ele) => {
+    ele.addEventListener("click", () => {
+      ele.parentElement.remove();
     });
   });
+  console.log(deleteMe);
+  
 };
 
 submit.addEventListener("click", createBookList);
+
