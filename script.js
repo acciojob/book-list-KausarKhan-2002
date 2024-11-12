@@ -6,7 +6,8 @@ let isbn = document.getElementById("isbn");
 let submit = document.getElementById("submit");
 let bookList = document.getElementById("book-list");
 
-const createBookList = () => {
+const createBookList = (e) => {
+	e.preventDefault()
   let tr = document.createElement("tr");
   let tdTitle = document.createElement("td");
   let tdAuthor = document.createElement("td");
