@@ -1,1 +1,54 @@
 /*  your css code here. If applicable */
+
+h1 {
+	text-align: center;
+}
+
+h1 span {
+   color: rgb(0, 170, 255);
+}
+
+#submit {
+    background-color: rgb(3, 90, 213);
+    border: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.table-striped {
+	margin-top: 1rem;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+}
+
+.table-striped {
+    width: 100%;
+}
+thead td{
+    /* border-bottom: 1px solid; */
+}
+
+#book-list {
+    border: 2px solid black;
+}
+
+.removeMe {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
