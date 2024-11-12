@@ -13,8 +13,8 @@ const createBookList = () => {
   let tdIsbn = document.createElement("td");
   let removeRow = document.createElement("td");
   let removeButton = document.createElement("button");
-    removeButton.innerHTML = "&#10005;"
-//   removeButton.innerHTML = "delete";
+  // removeButton.innerHTML = "&#10005;"
+	removeButton.innerHTML = "clear"
   removeButton.classList.add("delete");
   console.log(removeButton);
   

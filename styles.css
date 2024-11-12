@@ -1,7 +1,12 @@
 /*  your css code here. If applicable */
 
+body {
+	font-family: Arial;
+}
+
 h1 {
 	text-align: center;
+	color: #333;
 }
 
 h1 span {
@@ -23,6 +28,7 @@ h1 span {
 
 .table-striped {
 	margin-top: 1rem;
+	width: 100%;
 }
 
 .form-group input {
@@ -34,7 +40,9 @@ h1 span {
     width: 100%;
 }
 thead td{
-    /* border-bottom: 1px solid; */
+    border-bottom: 1px solid;
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 
 #book-list {
